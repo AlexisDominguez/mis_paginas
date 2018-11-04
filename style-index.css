@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
 *{margin: 0;}
+
+a{text-decoration: none; color: white;}
+
 body{
+    background-image: url(/images/index/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -11,11 +15,11 @@ body{
 
 header{
     height: 50px;
-    background: rgb(120, 123, 172);
-    padding: 10px;
+    background: rgba(120, 123, 172, 0.664);
     box-sizing: border-box;
     position: fixed;
-    width: 100%
+    width: 100%;
+    box-shadow: 0px 0px 30px 1px;
 }
 
 /* Nombre de la pagina web*/
@@ -24,17 +28,67 @@ header{
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.5em;
+    padding: 10px;
 }
+
+.btncontact{
+    float: right;
+    margin-right: 10px;
+    font-size: .8em;
+    background: rgb(50, 50, 194);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    transition: 1s;
+}
+
+.btncontact a{text-decoration: none; color: white;}
+.btncontact:hover{background: rgb(155, 37, 37); transition: 500ms}
+.btncontact a:link, .btncontact a:visited{color: white;}
+
 
 /* Configuracion del panel principal */
 .mainpnl{
-    background-image: url(/images/index/background.jpg);
     height: 100vh;
     box-sizing: border-box;
-    border: solid thin green;
     padding-top: 50px;
+}
+
+.maipnlimg{
+    height: 200px;
+    width: 200px;
+    margin: 10vh auto 0px auto;
+    background-image: url(/images/index/logo2.png);
     background-size: cover;
 }
+
+.mainpnlslogan{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10vh;
+    text-shadow: 1px 1px 10px black;
+}
+
+.btnxplr{
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 40vw;
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 5vh;
+    text-shadow: 1px 1px 10px black;
+    background: rgb(73, 78, 206);
+    box-shadow: 2px 2px 10px 1px black;
+    transition:500ms;
+}
+
+.btnxplr:hover{background: rgb(185, 26, 26); transition: 500ms;}
+.mainpnl a:link, .mainpnl a:visited{color:white;}
+
 
 /* Configuracion del contenedor de paneles */
 .pnl{color: black; font-family: Arial, Helvetica, sans-serif;}
@@ -42,7 +96,6 @@ header{
 /* Configuracion del subcontenedor de paneles 1 */
 .subpnl1{
     height: 200px;
-    border: solid thin blue;
     box-sizing: border-box;
     padding: 10px;
 }
@@ -53,7 +106,6 @@ header{
     padding: 10px;
     width: 70%;
     box-sizing: border-box;
-    border: solid thin red;
     height: 100%;
 }
 
@@ -64,13 +116,11 @@ header{
     padding: 10px;
     box-sizing: border-box;
     height: 100%;
-    border: solid thin red;
 }
 
 /* Configuracion del subcontenedor de paneles 2 */
 .subpnl2{
     height: 200px;
-    border: solid thin blue;
     box-sizing: border-box;
     padding: 10px;
 }
@@ -82,7 +132,6 @@ header{
     padding: 10px;
     height: 100%;
     box-sizing: border-box;
-    border: solid thin red;
 }
 
 /* Configuracion del panel 4 */
@@ -91,6 +140,5 @@ header{
     float: right;
     width:70%;
     box-sizing: border-box;
-    border: solid thin red;
     height: 100%;
 }
