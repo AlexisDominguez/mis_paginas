@@ -70,7 +70,7 @@ header{
     text-shadow: 1px 1px 10px black;
 }
 
-.btnxplr{
+.btnxplr, .btnxplr2{
     color: white;
     text-align: center;
     margin: auto;
@@ -86,18 +86,21 @@ header{
     transition:500ms;
 }
 
-.btnxplr:hover{background: rgb(185, 26, 26); transition: 500ms;}
-.mainpnl a:link, .mainpnl a:visited{color:white;}
+.btnxplr2{margin-top: 0; margin-bottom: 30px;}
 
+.btnxplr:hover, .btnxplr2:hover{background: rgb(185, 26, 26); transition: 500ms;}
+.mainpnl a:link, .mainpnl a:visited{color:white;}
+.mainpnl a{margin:auto; width: 40vw;}
 
 /* Configuracion del contenedor de paneles */
-.pnl{color: black; font-family: Arial, Helvetica, sans-serif;}
+.pnl{color: black; font-family: Arial, Helvetica, sans-serif; box-shadow: 0px 0px 20px 2px black;}
 
 /* Configuracion del subcontenedor de paneles 1 */
 .subpnl1{
-    height: 200px;
+    height: 400px;
     box-sizing: border-box;
     padding: 10px;
+    background: rgb(255, 255, 255);
 }
 
 /* Configuracion del panel 1 */
@@ -107,22 +110,49 @@ header{
     width: 70%;
     box-sizing: border-box;
     height: 100%;
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+.compabout, .compcontact{
+    text-align: center;
+    font-size: 1.8em;
+    padding: 20px 5px 20px 5px;
+    box-sizing: border-box;
+}
+
+.line hr{
+    border-width: 3px;
+    margin: auto;
+    width: 50%;
+    border-color: rgb(25, 0, 255);
+    box-shadow: 0px 3px 10px 0px;
+}
+
+.compinfo, .compemail{
+    text-align: center;
+    padding: 20px 5px 20px 5px;
+    box-sizing: border-box;
 }
 
 /* Configuracion del panel 2 */ 
 .pnl2{
     float: right;
-    width:30%;
-    padding: 10px;
+    width:28%;
+    padding: 0;
     box-sizing: border-box;
     height: 100%;
+    background-image: url(/images/index/pnl2.jpg);
+    background-size: cover;
+    box-shadow: 0px 3px 10px 1px black;
 }
 
 /* Configuracion del subcontenedor de paneles 2 */
 .subpnl2{
-    height: 200px;
+    height: 400px;
     box-sizing: border-box;
     padding: 10px;
+    background: rgb(255, 255, 255);
 }
 
 /* Configuracion del panel 3 */
@@ -132,13 +162,41 @@ header{
     padding: 10px;
     height: 100%;
     box-sizing: border-box;
+    background-image: url(/images/index/pnl3.jpg);
+    background-size: cover;
+    box-shadow: 0px 3px 10px 1px black;
 }
 
 /* Configuracion del panel 4 */
 .pnl4{
     padding: 10px;
     float: right;
-    width:70%;
+    width:68%;
     box-sizing: border-box;
     height: 100%;
+    background: rgb(240, 240, 240);
+    box-shadow: 0px 0px 10px 1px black;
+}
+
+
+/* FALTA LA CONFIGURACION DEL FOOTER */ 
+/* Configuracion del footer */
+footer{
+    background: rgba(120, 123, 172);
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.infocontainer{
+    height: 200px;
+}
+
+.infocontainer ul li{list-style: square; color: white}
+.infocontainer ul li a{color: white}
+
+.contact, .information, .policies{
+    float: left;
+    width: 33%;
+    border-right: solid thin black;
 }
