@@ -15,7 +15,7 @@ body{
 
 header{
     height: 50px;
-    background: rgba(120, 123, 172, 0.664);
+    background: #4E10AE;
     box-sizing: border-box;
     position: fixed;
     width: 100%;
@@ -35,14 +35,14 @@ header{
     float: right;
     margin-right: 10px;
     font-size: .8em;
-    background: rgb(50, 50, 194);
+    background: #73ADCF;
     border-radius: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
     transition: 1s;
 }
 
 .btncontact a{text-decoration: none; color: white;}
-.btncontact:hover{background: rgb(155, 37, 37); transition: 500ms}
+.btncontact:hover{background: #ECB009; transition: 500ms}
 .btncontact a:link, .btncontact a:visited{color: white;}
 
 
@@ -81,14 +81,14 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 5vh;
     text-shadow: 1px 1px 10px black;
-    background: rgb(73, 78, 206);
+    background: #498DB6;
     box-shadow: 2px 2px 10px 1px black;
     transition:500ms;
 }
 
 .btnxplr2{margin-top: 0; margin-bottom: 30px;}
 
-.btnxplr:hover, .btnxplr2:hover{background: rgb(185, 26, 26); transition: 500ms;}
+.btnxplr:hover, .btnxplr2:hover{background: #ECB009; transition: 500ms;}
 .mainpnl a:link, .mainpnl a:visited{color:white;}
 .mainpnl a{margin:auto; width: 40vw;}
 
@@ -125,7 +125,7 @@ header{
     border-width: 3px;
     margin: auto;
     width: 50%;
-    border-color: rgb(25, 0, 255);
+    border-color: #2B76A2;
     box-shadow: 0px 3px 10px 0px;
 }
 
@@ -133,6 +133,7 @@ header{
     text-align: center;
     padding: 20px 5px 20px 5px;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 
 /* Configuracion del panel 2 */ 
@@ -182,10 +183,11 @@ header{
 /* FALTA LA CONFIGURACION DEL FOOTER */ 
 /* Configuracion del footer */
 footer{
-    background: rgba(120, 123, 172);
+    background: #084B73;
     padding: 20px 10px 10px 10px;
     box-sizing: border-box;
     height: 100%;
+    line-height: 1.5;
 }
 
 .infocontainer{
@@ -193,7 +195,8 @@ footer{
 }
 
 .infocontainer ul li{list-style: square; color: white}
-.infocontainer ul li a{color: white}
+.infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: white}
+.infocontainer ul li a:hover{text-decoration: underline;}
 
 .contact, .information, .policies{
     float: left;
