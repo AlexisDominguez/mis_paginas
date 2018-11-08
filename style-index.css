@@ -13,6 +13,8 @@ body{
 
 .container{margin:auto;}
 
+
+/* Configuracion del header */
 header{
     height: 50px;
     background: #4E10AE;
@@ -22,7 +24,7 @@ header{
     box-shadow: 0px 0px 30px 1px;
 }
 
-/* Nombre de la pagina web*/
+/* Nombre de la pagina web */
 .namewp{
     color: rgb(255, 255, 255);
     text-align: left;
@@ -31,6 +33,7 @@ header{
     padding: 10px;
 }
 
+/* Configuracion del boton "Contacto" */
 .btncontact{
     float: right;
     margin-right: 10px;
@@ -53,6 +56,7 @@ header{
     padding-top: 50px;
 }
 
+/* Imagen del panel principal */
 .maipnlimg{
     height: 200px;
     width: 200px;
@@ -61,6 +65,7 @@ header{
     background-size: cover;
 }
 
+/* Eslogan del panel principal */
 .mainpnlslogan{
     color: white;
     text-align: center;
@@ -70,6 +75,7 @@ header{
     text-shadow: 1px 1px 10px black;
 }
 
+/* Configuracion de los botones "Explore nuestras funciones" */
 .btnxplr, .btnxplr2{
     color: white;
     text-align: center;
@@ -87,7 +93,6 @@ header{
 }
 
 .btnxplr2{margin-top: 0; margin-bottom: 30px;}
-
 .btnxplr:hover, .btnxplr2:hover{background: #ECB009; transition: 500ms;}
 .mainpnl a:link, .mainpnl a:visited{color:white;}
 .mainpnl a{margin:auto; width: 40vw;}
@@ -114,6 +119,7 @@ header{
     box-shadow: 0px 0px 10px 1px black;
 }
 
+/* Configuracion de los titulos de .pnl1 y .pnl4 */
 .compabout, .compcontact{
     text-align: center;
     font-size: 1.8em;
@@ -121,6 +127,7 @@ header{
     box-sizing: border-box;
 }
 
+/* Configuracion de las lineas de .pnl1 y .pnl4 */
 .line hr{
     border-width: 3px;
     margin: auto;
@@ -129,12 +136,17 @@ header{
     box-shadow: 0px 3px 10px 0px;
 }
 
+/* Configuracion de los textos dentro de .pnl1 y .pnl4*/
 .compinfo, .compemail{
-    text-align: center;
+    text-align:justify;
     padding: 20px 5px 20px 5px;
     box-sizing: border-box;
     line-height: 1.5;
+    padding-top: 50px;
+    font-size: 1.5em;
 }
+
+.compemail{text-align: center; padding-top: 100px;}
 
 /* Configuracion del panel 2 */ 
 .pnl2{
@@ -179,8 +191,6 @@ header{
     box-shadow: 0px 0px 10px 1px black;
 }
 
-
-/* FALTA LA CONFIGURACION DEL FOOTER */ 
 /* Configuracion del footer */
 footer{
     background: #084B73;
@@ -190,16 +200,23 @@ footer{
     line-height: 1.5;
 }
 
-.infocontainer{
-    height: 200px;
-}
+/* Configuracion del contenedor de la informacion del footer */
 
+.infocontainer{height: 200px;}
 .infocontainer ul li{list-style: square; color: white}
 .infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: white}
 .infocontainer ul li a:hover{text-decoration: underline;}
 
+/* Configuracion de los subpaneles dentro de .infocontainer*/
 .contact, .information, .policies{
     float: left;
     width: 33%;
     border-right: solid thin black;
+    color: white;
+    height: 100%;
 }
+
+.infotext{margin-left: 5px;}
+
+/* Configuracion del texto Copyright al final de la pagina */
+.copyright{color: white; text-align: center;}
