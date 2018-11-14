@@ -202,7 +202,7 @@ footer{
 
 /* Configuracion del contenedor de la informacion del footer */
 
-.infocontainer{height: 200px;}
+.infocontainer{height: 220px;}
 .infocontainer ul li{list-style: square; color: white}
 .infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: white}
 .infocontainer ul li a:hover{text-decoration: underline;}
