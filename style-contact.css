@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+*{margin: 0;}
+
+a{text-decoration: none; color: white;}
+
+/* Configuracion del header */
+header{
+    height: 50px;
+    background: #4E10AE;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 0px 30px 1px;
+}
+
+/* Nombre de la pagina web */
+.namewp{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+/* Configuracion del boton "Contacto" */
+.btncontact{
+    float: right;
+    margin-right: 10px;
+    font-size: .8em;
+    background: #73ADCF;
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    transition: 1s;
+}
+
+.mainpnl{
+    padding: 20px;
+    padding-top: 60px;
+    height: 100%;
+    box-sizing: border-box;
+    background-image: url(images/index/pnl3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+.frase{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+form{
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.txt-floatleft{
+    float: left;
+    width: 20%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.input-floatright{
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.btncontact a{text-decoration: none; color: white;}
+.btncontact:hover{background: #ECB009; transition: 500ms}
+.btncontact a:link, .btncontact a:visited{color: white;}
+
+/* Configuracion del footer */
+footer{
+    background: #084B73;
+    padding: 20px 10px 10px 10px;
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.5;
+}
+
+/* Configuracion del contenedor de la informacion del footer */
+
+.infocontainer{height: 220px;}
+.infocontainer ul li{list-style: square; color: white}
+.infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: white}
+.infocontainer ul li a:hover{text-decoration: underline;}
+
+/* Configuracion de los subpaneles dentro de .infocontainer*/
+.contact, .information, .policies{
+    float: left;
+    width: 33%;
+    border-right: solid thin black;
+    color: white;
+    height: 100%;
+}
+
+.infotext{margin-left: 5px;}
+
+/* Configuracion del texto Copyright al final de la pagina */
+.copyright{color: white; text-align: center;}
