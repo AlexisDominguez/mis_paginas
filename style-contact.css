@@ -18,7 +18,7 @@ header{
 .namewp{
     color: rgb(255, 255, 255);
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     padding: 10px;
 }
@@ -37,7 +37,7 @@ header{
 .mainpnl{
     padding: 20px;
     padding-top: 60px;
-    height: 100%;
+    height: 500px;    /* TEMPORAL */
     box-sizing: border-box;
     background-image: url(images/index/pnl3.jpg);
     background-size: cover;
@@ -49,12 +49,26 @@ header{
     width: 50%;
     float: left;
     box-sizing: border-box;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 50px;
+    color: white;
+    font-size: 2em;
+    text-shadow: 1px 1px 5px black;
 }
 
-form{
+.uppercase{
+    text-transform: uppercase;
+}
+/* Configuración del formulario */
+.form{
     width: 50%;
     float: right;
     box-sizing: border-box;
+    background: rgba(8, 76, 115, 0.5);
+    padding: 1%;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .txt-floatleft{
@@ -63,6 +77,8 @@ form{
     margin-top: 5px;
     margin-bottom: 5px;
     box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .input-floatright{
@@ -70,8 +86,48 @@ form{
     margin-top: 5px;
     margin-bottom: 5px;
     box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+.btn-send{
+    margin: 10px auto 0px auto;
+    text-align: center;
+}
+
+input[type="submit"]{
+    border: none;
+    font-size: 1em;
+    padding: 5px 20px 5px 20px;
+    color: white;
+    background: #73ADCF;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background: #ECB009;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.form-link{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-link a{
+    text-decoration: underline;
+}
+
+.form-link a:active{
+    color: initial;
+}
+
+.form-link a:visited{
+    color: initial;
+}
+/* Configuración del botón contacto */
 .btncontact a{text-decoration: none; color: white;}
 .btncontact:hover{background: #ECB009; transition: 500ms}
 .btncontact a:link, .btncontact a:visited{color: white;}
