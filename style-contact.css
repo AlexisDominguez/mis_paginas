@@ -15,7 +15,7 @@ header{
 }
 
 /* Nombre de la pagina web */
-.namewp{
+.nameWebPage{
     color: rgb(255, 255, 255);
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -24,7 +24,7 @@ header{
 }
 
 /* Configuracion del boton "Contacto" */
-.btncontact{
+.buttonContact{
     float: right;
     margin-right: 10px;
     font-size: .8em;
@@ -34,103 +34,126 @@ header{
     transition: 1s;
 }
 
-.mainpnl{
-    padding: 20px;
+.buttonContact a{text-decoration: none; color: white;}
+.buttonContact:hover{background: #ECB009; transition: 500ms}
+.buttonContact a:link, .buttonContact a:visited{color: white;}
+
+
+/* Configuración del panel principal */
+.mainPanel{
     padding-top: 60px;
     height: 500px;    /* TEMPORAL */
     box-sizing: border-box;
-    background-image: url(images/index/pnl3.jpg);
+    background-image: url(images/contact/contact-background-edited.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
 }
 
 .frase{
-    width: 50%;
-    float: left;
+    width: 100%;
     box-sizing: border-box;
-    text-align: justify;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding-top: 50px;
+    margin-top: 190px;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
     text-shadow: 1px 1px 5px black;
+    background: rgba(0, 0, 0, 0.5); /* TEMPORAL */
 }
 
 .uppercase{
     text-transform: uppercase;
 }
-/* Configuración del formulario */
-.form{
-    width: 50%;
-    float: right;
-    box-sizing: border-box;
-    background: rgba(8, 76, 115, 0.5);
-    padding: 1%;
-    border-radius: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+/* Configuración del panel de contacto */
+.contactPanel{
+    height: 600px;
+    background: rgb(255, 255, 255);
 }
 
-.txt-floatleft{
-    float: left;
-    width: 20%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.contactUs{
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.input-floatright{
-    width: 80%;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-send{
-    margin: 10px auto 0px auto;
+    padding-top: 50px;
+    width: 100%;
     text-align: center;
+    font-size: 1.4em;
+    line-height: 1.6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(70, 70, 70);
+}
+
+.tellUs{
+    font-size: 0.8em;
+}
+
+/* Configuración del formulario */
+
+.inputText{
+    margin: auto;
+    margin-top: 20px;
+    width: 92%;
+    box-sizing: border-box;
+}
+
+input[type="text"]{
+    box-sizing: border-box;
+    width: 33%;
+    padding: 10px;
+}
+
+textarea{
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
+.contactFormsContainer{
+    margin-top: 30px;
+    box-sizing: border-box;
+    float: left;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    color: rgb(70, 70, 70);
+}
+
+.buttonSubmit{
+    box-sizing: border-box;
+    margin-top: 30px;
+    float: right;
 }
 
 input[type="submit"]{
-    border: none;
-    font-size: 1em;
-    padding: 5px 20px 5px 20px;
+    box-sizing: border-box;
+    border-color: black;
     color: white;
-    background: #73ADCF;
-    transition: .2s;
-    border-radius: 5px;
+    background: #380D7B;
+    padding: 15px 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    transition: .5s ease;
 }
 
 input[type="submit"]:hover{
-    background: #ECB009;
-    transition: .2s;
     cursor: pointer;
+    transition:  .5s ease;
+    background: #ECB009;
+    color: black;
 }
 
-.form-link{
-    margin-top: 50px;
+.location{
+    margin-top: 175px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    color: rgb(70, 70, 70);
 }
-
-.form-link a{
-    text-decoration: underline;
-}
-
-.form-link a:active{
-    color: initial;
-}
-
-.form-link a:visited{
-    color: initial;
-}
-/* Configuración del botón contacto */
-.btncontact a{text-decoration: none; color: white;}
-.btncontact:hover{background: #ECB009; transition: 500ms}
-.btncontact a:link, .btncontact a:visited{color: white;}
 
 /* Configuracion del footer */
 footer{
@@ -161,3 +184,4 @@ footer{
 
 /* Configuracion del texto Copyright al final de la pagina */
 .copyright{color: white; text-align: center;}
+
