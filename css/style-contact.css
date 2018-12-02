@@ -7,13 +7,12 @@ a{text-decoration: none; color: white;}
 /* Configuracion del header */
 .header{
     height: 50px;
-    background: rgba(0, 0, 0,1);
+    background: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     position: fixed;
     width: 100%;
-    box-shadow: 0px 0px 30px 1px;
     z-index: 1;
-    transition: 2s;
+    transition: .5s;
 }
 
 .headerAnimation{
@@ -21,10 +20,9 @@ a{text-decoration: none; color: white;}
     box-sizing: border-box;
     position: fixed;
     width: 100%;
-    box-shadow: 0px 0px 30px 1px;
     z-index: 1;
-    transition: 2s;
-    background: #4E10AE;
+    transition: .5s;
+    background: rgba(0, 0, 0, .9);
 }
 
 /* Nombre de la pagina web */
@@ -36,28 +34,46 @@ a{text-decoration: none; color: white;}
     padding: 10px;
 }
 
-/* Configuracion del boton "Contacto" */
-.buttonContact{
+/* Configuracion del boton "Equipo" */
+.buttonTeam{
     float: right;
     margin-right: 10px;
     font-size: .8em;
-    background: #73ADCF;
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
-    transition: 1s;
+    transition: .5s;
+    text-shadow: 1px 1px 5px black;
 }
 
-.buttonContact a{text-decoration: none; color: white;}
-.buttonContact:hover{background: #ECB009; transition: 500ms}
-.buttonContact a:link, .buttonContact a:visited{color: white;}
+.buttonTeam a{text-decoration: none; color: white;}
+.buttonTeam:hover{background: #ECB009; transition: 500ms}
+.buttonTeam a:link, .buttonTeam a:visited{color: white;}
+
+/* Configuración del botón "Precios" */
+
+.buttonPrices{
+    float: right;
+    margin-right: 10px;
+    font-size: .8em;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    transition: .5s;
+    text-shadow: 1px 1px 5px black;
+}
+
+.buttonPrices a{text-decoration: none; color: white;}
+.buttonPrices:hover{background: #ECB009; transition: 500ms}
+.buttonPrices a:link, .buttonPrices a:visited{color: white;}
 
 
 /* Configuración del panel principal */
 .mainPanel{
     padding-top: 60px;
-    height: 500px;    /* TEMPORAL */
+    height: 500px;
     box-sizing: border-box;
-    background-image: url(images/contact/contact-background-edited.jpg);
+    background-image: url(../images/contact/contact-background-edited.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -71,18 +87,17 @@ a{text-decoration: none; color: white;}
     color: white;
     font-size: 1.5em;
     text-shadow: 1px 1px 5px black;
-    background: rgba(0, 0, 0, 0.5); /* TEMPORAL */
 }
 
 .uppercase{
     text-transform: uppercase;
 }
 
-/* Configuración del panel de contacto */
+/* Configuración del panel de Contacto */
 .contactPanel{
-    height: 600px;
+    height: 680px;
     background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 1px black;
+    box-shadow: 0px 0px 20px 3px black;
 }
 
 .contactUs{
@@ -145,9 +160,11 @@ textarea{
 
 input[type="submit"]{
     box-sizing: border-box;
-    border-color: black;
+    text-shadow: 1px 1px 5px black;
+    border: none;
     color: white;
-    background: #380D7B;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(40, 40, 40);
     padding: 15px 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1em;
@@ -158,7 +175,6 @@ input[type="submit"]:hover{
     cursor: pointer;
     transition:  .5s ease;
     background: #ECB009;
-    color: black;
 }
 
 .location{
@@ -170,31 +186,30 @@ input[type="submit"]:hover{
 
 /* Configuracion del footer */
 footer{
-    background: #084B73;
+    background: rgb(240, 240, 240);
     padding: 20px 10px 10px 10px;
     box-sizing: border-box;
     height: 100%;
     line-height: 1.5;
+    color: rgb(30, 30, 30);
 }
 
 /* Configuracion del contenedor de la informacion del footer */
 
 .infocontainer{height: 220px; font-family: Georgia, 'Times New Roman', Times, serif; font-size: .9em;}
-.infocontainer ul li{list-style: square; color: white}
-.infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: white}
+.infocontainer ul li{list-style: square;}
+.infocontainer ul li a, .infocontainer ul li a:link ,.infocontainer ul li a:visited{color: rgb(30, 30, 30);}
 .infocontainer ul li a:hover{text-decoration: underline;}
 
 /* Configuracion de los subpaneles dentro de .infocontainer*/
 .contact, .information, .policies{
     float: left;
     width: 33%;
-    border-right: solid thin black;
-    color: white;
     height: 100%;
 }
 
 .infotext{margin-left: 5px;}
 
 /* Configuracion del texto Copyright al final de la pagina */
-.copyright{color: white; text-align: center;}
+.copyright{text-align: center;}
 

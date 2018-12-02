@@ -5,7 +5,7 @@
 a{text-decoration: none; color: white;}
 
 body{
-    background-image: url(images/index/background.jpg);
+    background-image: url(../images/index/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ header{
 .nameWebPage{
     color: rgb(255, 255, 255);
     text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5em;
     padding: 10px;
 }
@@ -61,7 +61,7 @@ header{
     height: 200px;
     width: 200px;
     margin: 10vh auto 0px auto;
-    background-image: url(images/index/logo2.png);
+    background-image: url(../images/index/logo2.png);
     background-size: cover;
 }
 
@@ -70,7 +70,7 @@ header{
     color: white;
     text-align: center;
     font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10vh;
     text-shadow: 1px 1px 10px black;
 }
@@ -84,7 +84,7 @@ header{
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
     font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 5vh;
     text-shadow: 1px 1px 10px black;
     background: #498DB6;
@@ -98,7 +98,7 @@ header{
 .buttonContact a{margin:auto; width: 40vw;}
 
 /* Configuracion del contenedor de paneles */
-.panel{color: black; font-family: Arial, Helvetica, sans-serif; box-shadow: 0px 0px 20px 2px black;}
+.panel{color: black; font-family: Georgia, 'Times New Roman', Times, serif; box-shadow: 0px 0px 20px 2px black;}
 
 /* Configuracion del subcontenedor de paneles 1 */
 .subPanel1{
@@ -155,7 +155,7 @@ header{
     padding: 0;
     box-sizing: border-box;
     height: 100%;
-    background-image: url(images/index/pnl2.jpg);
+    background-image: url(../images/index/pnl2.jpg);
     background-size: cover;
     box-shadow: 0px 3px 10px 1px black;
 }
@@ -175,7 +175,7 @@ header{
     padding: 10px;
     height: 100%;
     box-sizing: border-box;
-    background-image: url(images/index/pnl3.jpg);
+    background-image: url(../images/index/pnl3.jpg);
     background-size: cover;
     box-shadow: 0px 3px 10px 1px black;
 }
