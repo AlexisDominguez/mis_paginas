@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="flags/flags.css">
     <script src="javascript/jquery-3.3.1.min.js"></script>
     <script src="javascript/contact.js"></script>
-    <title>BusinessWeb</title>
+    <title>BusinessWeb: Marketing y Páginas web para su negocio</title>
 </head>
 <body>
     <!-- inicio de container-->
@@ -35,12 +35,12 @@
                 Contáctanos...<br>
                 <span class="tellUs">Cuéntanos que quieres lograr.</span>
             </div>
-            <form action="">
+            <form method="POST" action="php/contact.php" id="formData">
                     <div class="inputText">
-                        <input type="text" maxlength="100" class="useIcomoonFont" placeholder="&#xe971; Tu nombre">
-                        <input type="text" maxlength="100"class="useIcomoonFont" placeholder="&#xe942; Tu número de teléfono">
-                        <input type="text" maxlength="100"class="useIcomoonFont" placeholder="&#xea83; Tu Email">
-                        <textarea class="useIcomoonFont" maxlength="5000" placeholder="&#xe96b; Mensaje..."></textarea>
+                        <input type="text" maxlength="100" class="useIcomoonFont" name="name" id="name"  placeholder="&#xe971; Tu nombre">
+                        <input type="text" maxlength="100"class="useIcomoonFont" name="phoneNumber" id="phoneNumber" required="required" placeholder="&#xe942; Tu número de teléfono">
+                        <input type="text" maxlength="100"class="useIcomoonFont" name="email" id="email" required="required" placeholder="&#xea83; Tu Email">
+                        <textarea class="useIcomoonFont" name="message" id="message" maxlength="5000" placeholder="&#xe96b; Mensaje..."></textarea>
                         <div class="contactFormsContainer">
                                 <span>Otras formas de contacto: </span><br>
                                 <img src="flags/blank.gif" class="flag flag-mx"> +52 166 5723<br>
@@ -48,7 +48,7 @@
                                 Sábado - Domingo: 9:00 am - 10:00pm <br>
                             </div>
                         <div class="buttonSubmit">
-                            <input type="submit" value="Enviar">
+                            <input type="submit" value="Enviar" name="buttonSubmit" id="buttonSubmit">
                         </div>
                         <div class="location">Saucillo, Chihuahua, México.</div>
                     </div>
