@@ -30,7 +30,6 @@ $(document).ready(function(){       //Indica que su contenido se utilizará sól
            // $(".buttonTeam").addClass("buttonTeamAnimation");
            // $(".buttonPrices").addClass("buttonPricesAnimation");
         }else{
-            console.log("Estamos antes de la posisión 50");
             $(".header").removeClass("headerAnimation");
            // $(".buttonTeam").removeClass("buttonTeamAnimation");
            // $(".buttonPrices").removeClass("buttonPricesAnimation");

@@ -4,22 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/header2.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/style-contact.css">
     <link rel="stylesheet" type="text/css" media="screen" href="icomoon/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="flags/flags.css">
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
     <script src="javascript/jquery-3.3.1.min.js"></script>
     <script src="javascript/contact.js"></script>
+    <script src="javascript/responsiveMenu.js"></script>
     <title>BusinessWeb: Marketing y Páginas web para su negocio</title>
 </head>
 <body>
     <!-- inicio de container-->
     <div class="container">
          <!-- header-->
-         <header class="header">
-            <div class="nameWebPage">
-                <a href="index.html">BusinessWeb</a>
-                <div class="buttonTeam"><a href="">Equipo</a></div>
-                <div class="buttonPrices"><a href="">Precios</a></div>
+        <header class="header">
+            <a href="index.html"><div class="nameWebSite"></div></a>
+            <div class="headerButtonsContainer">
+                <div class="headerButton"><a href="contact.html"><span class="icon-mail2"></span> Contacto</a></div>
+                <div class="headerButton"><a href=""><span class="icon-users"></span> Equipo</a></div>
+                <div class="headerButton"><a href=""><span class="icon-price-tags"></span> Precios</a></div>
+                <div class="headerButton"><a href="services.html"><span class="icon-earth"></span> Servicios</a></div>
+            </div>
+            <div class="headerButtonsContainerResponsive">
+                <span class="icon-list2 listButton"></span>
+                <nav>
+                    <ul>
+                        <a href="services.html"><li><span class="icon-earth"></span> Servicios</li></a>
+                        <a href=""><li><span class="icon-price-tags"></span> Precios</li></a>
+                        <a href=""><li><span class="icon-users"></span> Equipo</li></a>
+                        <a href="contact.html"><li><span class="icon-mail2"></span> Contacto</li></a>
+                    </ul>
+                </nav>
             </div>
         </header> <!-- Fin de header-->
 
