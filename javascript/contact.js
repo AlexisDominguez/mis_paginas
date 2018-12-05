@@ -21,6 +21,20 @@ function validateForm(){
     return true;
 }
 
+function changePlaceHolder(){
+    if($(window).width()<=650){
+        $("input[name='name']").attr("placeholder", "Nombre");
+    }
+
+    if($(window).width()<=650){
+        $("input[name='phoneNumber']").attr("placeholder", "Teléfono");
+    }
+
+    if($(window).width()<=650){
+        $("input[name='email']").attr("placeholder", "Email")
+    }
+}
+
 $(document).ready(function(){       //Indica que su contenido se utilizará sólo si el documento ha cargado completamente
     /* Esta función se encarga de la animación del header según su posisión */
     $(window).scroll(function(){    //Detecta el scroll de la pantalla
@@ -40,4 +54,6 @@ $(document).ready(function(){       //Indica que su contenido se utilizará sól
     $("#buttonSubmit").click(function(){
         //validateForm()
     });
+
+    changePlaceHolder();
 });

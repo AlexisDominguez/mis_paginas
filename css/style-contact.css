@@ -29,6 +29,18 @@ a{text-decoration: none; color: white;}
     text-transform: uppercase;
 }
 
+@media screen and (max-width:500px){
+    .uppercase{
+        font-size: 1.2em;
+    }
+
+    .frase{
+        margin-top: 170px;
+        font-size: 1em;
+    }
+
+}
+
 /* Configuración del panel de Contacto */
 .contactPanel{
     height: 680px;
@@ -60,10 +72,22 @@ a{text-decoration: none; color: white;}
     box-sizing: border-box;
 }
 
+
 input[type="text"]{
     box-sizing: border-box;
     width: 33%;
     padding: 10px;
+}
+
+@media screen and (max-width: 900px){
+    input[type="text"]{
+        padding: 10px;
+        width: 32%;
+    }
+
+    .inputText{
+        width: 100%;
+    }
 }
 
 textarea{
@@ -148,4 +172,3 @@ footer{
 
 /* Configuracion del texto Copyright al final de la pagina */
 .copyright{text-align: center;}
-
