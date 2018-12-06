@@ -10,8 +10,8 @@ a{text-decoration: none; color: white;}
     box-sizing: border-box;
     position: fixed;
     width: 100%;
+    box-shadow: 0px 0px 30px 1px;
     z-index: 1;
-    transition: .5s;
 }
 
 /* Nombre de la pagina web */
