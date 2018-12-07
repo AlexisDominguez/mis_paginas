@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+.container{max-width: 1980px; margin: auto;}
+
 .mainPanel{
     padding-top: 50px;
     height: 500px;
@@ -54,4 +56,85 @@
     font-size: 1.2em;
     margin-top: 10px;
     color: rgb(40, 40, 40);
+}
+
+/* Configuración del panel de servicios */
+
+.servicesPanel, .servicePanelWiden, .servicesPanelBottom{
+    box-sizing: border-box;
+    padding: 1%;
+    position: relative;
+    height: 420px;
+}
+
+.serviceLeft, .servicePanelWide{
+    height: 410px;
+    width: 51%;
+    box-sizing: border-box;
+    background: #084B73;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    float: left;
+}
+
+.serviceImage{
+    margin: 10px auto 10px;
+    width: 80%;
+    height: 200px;
+    background: #ECB009;
+    border: solid medium #ECB009;
+    max-width: 400px;
+}
+
+.description{
+    font-size: .9em;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.moreInformationButton{
+    box-sizing: border-box;
+    font-size: .9em;
+    background: #ECB009;
+    width: 200px;
+    margin: 20px auto 10px auto;
+    padding: 10px;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s;
+    float: left;
+    margin-left: calc(50% - 100px);
+}
+
+.moreInformationButton:hover{
+    background: #FFCA39;
+    transform: 0.5s;
+}
+
+.serviceRight{
+    height: 410px;
+    width: 48%;
+    box-sizing: border-box;
+    background: #084B73;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    float: right;
+}
+
+.servicesPanelBottom{
+    height: 220px;
+}
+
+.servicePanelWide{
+    width: 100%;
+    height: 170px;
 }
