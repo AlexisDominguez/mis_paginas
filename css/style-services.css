@@ -113,7 +113,7 @@
 
 .moreInformationButton:hover{
     background: #FFCA39;
-    transform: 0.5s;
+    transition: 0.5s;
 }
 
 .serviceRight{
