@@ -24,6 +24,18 @@ header{
     box-shadow: 0px 0px 30px 1px;
 }
 
+/*  ---------------------------
+ OCULTAR FOOTER Y PANEL PRINCIPAL
+    --------------------------- */
+
+.panel{
+    display: none;
+}
+
+footer{
+    display: none;
+}
+
 /* Nombre de la pagina web */
 .nameWebPage{
     color: rgb(255, 255, 255);
@@ -61,7 +73,7 @@ header{
     height: 200px;
     width: 200px;
     margin: 10vh auto 0px auto;
-    background-image: url(../images/index/logo2.png);
+    background-image: url(../images/index/logo3.png);
     background-size: cover;
 }
 
@@ -73,6 +85,20 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 10vh;
     text-shadow: 1px 1px 10px black;
+    background: rgba(0, 0, 0, .5);
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    .mainPanelSlogan{
+        font-size: 1.8em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .mainPanelSlogan{
+        font-size: 1.5em;
+    }
 }
 
 /* Configuracion de los botones "Explore nuestras funciones" */
@@ -90,6 +116,20 @@ header{
     background: #498DB6;
     box-shadow: 2px 2px 10px 1px black;
     transition:500ms;
+}
+
+@media screen and (max-width: 1024px){
+    .buttonExplore, .buttonExplore2{
+        font-size: 1.5em;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .buttonExplore, .buttonExplore2{
+        font-size: 1.5em;
+        width: 80%;
+    }
 }
 
 .buttonExplore2{margin-top: 0; margin-bottom: 30px;}
