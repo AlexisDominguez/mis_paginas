@@ -81,7 +81,7 @@ h1{
 }
 
 .autoBiographyContent{
-    background: rgba(0, 0, 0, .5);
+background: rgba(0, 0, 0, .9);
     border-radius: 20px 20px 20px 20px;
 }
 
@@ -98,4 +98,6 @@ h1{
     padding: 20px;
     padding-top: 10px;
     font-size: 1.2em;
+    line-height: 2;
+    text-align: justify;
 }
