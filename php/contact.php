@@ -4,19 +4,39 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>BusinessWeb: Marketing y Páginas web para su negocio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contacte con el equipo de BusinessWeb y obtenga información obre los servicios que se ofrece.">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/header2.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style-contact.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/contactPHP.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="../icomoon/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../flags/flags.css" />
+    <link rel="stylesheet" href="text/css" media="screen" href="../css/footer.css" />
+    <link type="image/x-icon" href="favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="favicon.ico" rel="shortcut icon" />
+    <script src="../javascript/jquery-3.3.1.min.js"></script>
+    <script src="../javascript/contact.js"></script>
+    <script src="../javascript/responsiveMenu.js"></script>
 </head>
 <body>
     <div class="container">
-                 <!-- header-->
-         <header class="header">
-            <div class="nameWebPage">
-                <a href="../index.html">BusinessWeb</a>
-                <div class="buttonTeam"><a href="">Equipo</a></div>
-                <div class="buttonPrices"><a href="">Precios</a></div>
+<!-- header-->
+        <header class="header">
+            <a href="../index.html"><div class="nameWebSite"></div></a>
+            <div class="headerButtonsContainer">
+                <div class="headerButton"><a href="../contact.html"><span class="icon-mail2"></span> Contacto</a></div>
+                <div class="headerButton"><a href="../team.html"><span class="icon-users"></span> Equipo</a></div>
+                <div class="headerButton"><a href="../prices.html"><span class="icon-price-tags"></span> Precios</a></div>
+                <div class="headerButton"><a href="../services.html"><span class="icon-earth"></span> Servicios</a></div>
+            </div>
+            <div class="headerButtonsContainerResponsive">
+                <span class="icon-list2 listButton"></span>
+                <nav>
+                    <ul>
+                        <a href="../services.html"><li><span class="icon-earth"></span> Servicios</li></a>
+                        <a href="../prices.html"><li><span class="icon-price-tags"></span> Precios</li></a>
+                        <a href="../team.html"><li><span class="icon-users"></span> Equipo</li></a>
+                        <a href="../contact.html"><li><span class="icon-mail2"></span> Contacto</li></a>
+                    </ul>
+                </nav>
             </div>
         </header> <!-- Fin de header-->
 
@@ -46,6 +66,25 @@
                         $msgOutput="";
                         /* cerrar sentencia */
                         $stmt->close();
+
+                        /* Configuración del correo electrónico */
+                        $destino_a= "alexisdominguezsanchez3@gmail.com"; 
+                        $asunto_a= "BusinesWeb - Contacto."; 
+                        $mensaje_a= "<html>"
+                                    ."<head><title>BusinessWeb - Contacto</title></head>"
+                                    ."<body><h2>Sitema de correos de BusinessWeb</h2>"
+                                    ."<h3>Mensaje de: " . $name ."</h3>" 
+                                    ."<p>". $message ."</p>"
+                                    ."<h3>Información de contacto del cliente:</h3>"
+                                    ."<strong>Número de teléfono: </strong>". $phoneNumber ."<br>"
+                                    ."<strong>Correo electrónico: </strong>". $email
+                                    ."</body>"
+                                    ."</html>";
+                        $encabezado_a = 'MIME-Version: 1.0' . "\r\n"; 
+                        $encabezado_a .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                        $encabezado_a .= "De: " . $email; 
+                        mail($destino_a, $asunto_a , $mensaje_a,$encabezado_a ) or die ("Su mensaje no se envio."); 
+
                     } else {
                         $msgOutput="Error preparando la consulta: ".$conexionSql->error;
                     }
